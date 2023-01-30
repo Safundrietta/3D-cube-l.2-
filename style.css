@@ -45,5 +45,8 @@ body{
     height: 600px;
     background: var(--clr);
     transform-style: preserve-3d;
+    transform: rotateY(calc(90deg * var(--i)))
+    translateZ(299px);
+    transition: .5s;
 }
 
