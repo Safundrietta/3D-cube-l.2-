@@ -15,8 +15,8 @@ body{
 
 .cube{
     position: absolute;
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
 }
 
 .cube div{
@@ -27,26 +27,25 @@ body{
     height: 100%;
     transform-style: preserve-3d;
     animation: anim_cube 30s linear infinite;
-    transform: rotateX (-20deg) rotateY(25deg);
+    transform: rotateX(-20deg) rotateY(25deg);
 }
 
 @keyframes anim_cube{
     0%{
-
+    transform: rotateX(20deg) rotateY(360deg);
     }
     100%{
-
+    transform: rotateX(-20deg) rotateY(0deg);
     }
 }
 
 .cube .big span{
     position: absolute;
-    width: 600px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     background: var(--clr);
     transform-style: preserve-3d;
-    transform: rotateY(calc(90deg * var(--i)))
-    translateZ(299px);
+    transform: rotateY(calc(90deg * var(--i))) translateZ(199px);
     transition: .5s;
 }
 
